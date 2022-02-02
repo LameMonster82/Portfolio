@@ -14,6 +14,9 @@ const getBtnTheme = localStorage.getItem('portfolio-btn-theme')
 addThemeClass(getBodyTheme, getBtnTheme)
 
 const isDark = () => body.classList.contains('dark')
+if(!isDark) {
+	toggleTheme();
+}
 
 const setTheme = (bodyClass, btnClass) => {
 

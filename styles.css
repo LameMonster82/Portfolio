@@ -21,9 +21,11 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  line-height: 1.5;
+  line-height: 1.483;
   color: var(--clr-fg);
-  background-color: var(--clr-bg);
+  /*background-color: var(--clr-bg);*/
+  background-image: var(--background);
+  background-repeat: repeat;
 }
 
 .light {
@@ -33,16 +35,18 @@ body {
   --clr-fg-alt: #444;
   --clr-primary: #2978b5;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --background: url("wave-light.png");
 }
 
 .dark {
-  --clr-bg: #23283e;
-  --clr-bg-alt: #2a2f4c;
-  --clr-fg: #bdbddd;
-  --clr-fg-alt: #cdcdff;
-  --clr-primary: #90a0d9;
+  --clr-bg: #1a1a1a;
+  --clr-bg-alt: #56565f;
+  --clr-fg: #eeeeee;
+  --clr-fg-alt: #bababa;
+  --clr-primary: #ffffff;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  --background: url("wave-dark.png");
 }
 
 ::-moz-selection {
@@ -257,15 +261,18 @@ main {
 
 .about__name {
   color: var(--clr-primary);
+  font-size: 6rem;
 }
 
 .about__role {
-  margin-top: 1.2em;
+  margin-top: 2.2em;
+  margin-bottom: 1.5em;
 }
 
 .about__desc {
-  font-size: 1rem;
+  font-size: 1.1rem;
   max-width: 600px;
+  margin: 2em 5em 0 5em;
 }
 
 .about__desc,
@@ -290,11 +297,12 @@ main {
 }
 
 .project {
-  padding: 2em;
-  margin: 0 auto;
+  padding: 0 0 2em;
+  margin: 0 0 0 0;
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
+  background-color: var(--clr-bg);
 }
 
 .project:hover {
@@ -302,7 +310,9 @@ main {
 }
 
 .project__description {
-  margin-top: 1em;
+  margin: 1em;
+  margin-right: 0;
+  max-width: 80%;
 }
 
 .project__stack {
@@ -341,8 +351,8 @@ main {
 }
 
 .footer {
-  padding: 3em 0;
-  margin-top: 4em;
+  padding: 2em 0;
+  margin-top: 0;
   text-align: center;
 }
 
@@ -410,4 +420,18 @@ main {
   .scroll-container {
     display: none;
   }
+}
+
+.underline {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.circular--square { border-radius: 50%; }
+
+img {
+  object-fit: scale-down;
+  width: 100%;
+  margin: 0 0 2em 0;
+  padding: 0 0 0 0;
 }
