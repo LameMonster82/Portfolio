@@ -21,7 +21,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  line-height: 1.483;
+  line-height: 1.4;
   color: var(--clr-fg);
   /*background-color: var(--clr-bg);*/
   background-image: var(--background);
