@@ -383,6 +383,22 @@ main {
   color: rgb(255, 255, 255);
 }
 
+.project__stack-item-color-gtk {
+  background-color: #729fcf;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  color: rgb(255, 255, 255);
+}
+
+.project__stack-item-color-rust {
+  background-color: #f74c00;
+  border-color: #ca3d00;
+  border-width: 1px;
+  border-style: solid;
+  color: rgb(255, 255, 255);
+}
+
 .project .link--icon {
   margin-left: 0.5em;
 }
